@@ -6,11 +6,11 @@ VERSION := $(shell grep -Eo '(v[0-9]+[\.][0-9]+[\.][0-9]+(-[a-zA-Z0-9]*)?)' vers
 build: check build-server build-webui
 
 build-server:
-	CGO_ENABLED=1 go build -o ./bin/server github.com/moov-io/imagecashletter/cmd/server
+	CGO_ENABLED=1 go build -o ./bin/server github.com/cardcorp/imagecashletter/cmd/server
 
 build-webui:
 	cp $(shell go env GOROOT)/misc/wasm/wasm_exec.js ./cmd/webui/assets/wasm_exec.js
-	GOOS=js GOARCH=wasm go build -o ./cmd/webui/assets/imagecashletter.wasm github.com/moov-io/imagecashletter/cmd/webui/icl/
+	GOOS=js GOARCH=wasm go build -o ./cmd/webui/assets/imagecashletter.wasm github.com/cardcorp/imagecashletter/cmd/webui/icl/
 	CGO_ENABLED=0 go build -o ./bin/webui ./cmd/webui
 
 check:
@@ -28,7 +28,7 @@ else
 	OPENAPI_GENERATOR_VERSION=4.2.0 ./openapi-generator generate -i openapi.yaml -g go -o ./client
 	rm -f client/go.mod client/go.sum
 	go fmt ./...
-	go build github.com/moov-io/imagecashletter/client
+	go build github.com/cardcorp/imagecashletter/client
 	go test ./client
 endif
 
@@ -42,9 +42,9 @@ endif
 
 dist: clean client build
 ifeq ($(OS),Windows_NT)
-	CGO_ENABLED=1 GOOS=windows go build -o bin/imagecashletter.exe github.com/moov-io/imagecashletter/cmd/server
+	CGO_ENABLED=1 GOOS=windows go build -o bin/imagecashletter.exe github.com/cardcorp/imagecashletter/cmd/server
 else
-	CGO_ENABLED=1 GOOS=$(PLATFORM) go build -o bin/imagecashletter-$(PLATFORM)-amd64 github.com/moov-io/imagecashletter/cmd/server
+	CGO_ENABLED=1 GOOS=$(PLATFORM) go build -o bin/imagecashletter-$(PLATFORM)-amd64 github.com/cardcorp/imagecashletter/cmd/server
 endif
 
 docker: clean docker-hub docker-fuzz docker-openshift docker-webui

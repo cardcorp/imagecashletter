@@ -29,13 +29,13 @@ imagecashletterfuzz-6bbdc574f5-pl2zm        1/1       Running     0          1h
 Then using the [volume's mount path](https://github.com/moov-io/infra/blob/master/lib/apps/10-imagecashletterfuzz.yml) select any crasher files.
 
 ```
-$ kubectl exec -n apps imagecashletterfuzz-6bbdc574f5-pl2zm -- ls -la /go/src/github.com/moov-io/imagecashletter/test/fuzz-reader/crashers/
+$ kubectl exec -n apps imagecashletterfuzz-6bbdc574f5-pl2zm -- ls -la /go/src/github.com/cardcorp/imagecashletter/test/fuzz-reader/crashers/
 total 28
 drwxr-xr-x    3 root     root          4096 Jan 30 00:26 .
 drwxr-xr-x    1 root     root          4096 Jan 14 17:30 ..
 
 # Download files, replace <file> with a crasher file
-$ kubectl cp 'apps/imagecashletterfuzz-6bbdc574f5-pl2zm:/go/src/github.com/moov-io/imagecashletter/test/fuzz-reader/crashers/<file>' ./
+$ kubectl cp 'apps/imagecashletterfuzz-6bbdc574f5-pl2zm:/go/src/github.com/cardcorp/imagecashletter/test/fuzz-reader/crashers/<file>' ./
 ```
 
 ### fuzzit integration

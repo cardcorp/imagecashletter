@@ -17,10 +17,10 @@ import (
 	"syscall"
 	"time"
 
+	"github.com/cardcorp/imagecashletter"
 	"github.com/gorilla/mux"
 	"github.com/moov-io/base/admin"
 	"github.com/moov-io/base/http/bind"
-	"github.com/moov-io/imagecashletter"
 )
 
 var (

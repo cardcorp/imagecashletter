@@ -8,7 +8,7 @@ menubar: docs-menu
 
 # Binary Distribution
 
-Download the [latest Moov ImageCashLetter server release](https://github.com/moov-io/imagecashletter/releases) for your operating system and run it from a terminal.
+Download the [latest Moov ImageCashLetter server release](https://github.com/cardcorp/imagecashletter/releases) for your operating system and run it from a terminal.
 
 ```sh
 $ ./imagecashletter-darwin-amd64

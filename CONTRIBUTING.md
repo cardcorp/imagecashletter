@@ -35,13 +35,13 @@ We recommend using additional git remote's for pushing/pulling code. Go cares ab
 To pull our source code run:
 
 ```
-$ go get github.com/moov-io/imagecashletter
+$ go get github.com/cardcorp/imagecashletter
 ```
 
 Then, add your (or another user's) fork.
 
 ```
-$ cd $GOPATH/src/github.com/moov-io/imagecashletter
+$ cd $GOPATH/src/github.com/cardcorp/imagecashletter
 
 $ git remote add $user git@github.com:$user/imagecashletter.git
 
@@ -64,7 +64,7 @@ A good quality PR will have the following characteristics:
 
 A good PR should be able to flow through a peer review system easily and quickly.
 
-Our Build pipeline utilizes [Travis-CI](https://travis-ci.com/moov-io/x9) to enforce many tools that you should add to your editor before issuing a pull request. Learn more about these tools on our [Go Report card](https://goreportcard.com/report/github.com/moov-io/imagecashletter)
+Our Build pipeline utilizes [Travis-CI](https://travis-ci.com/moov-io/x9) to enforce many tools that you should add to your editor before issuing a pull request. Learn more about these tools on our [Go Report card](https://goreportcard.com/report/github.com/cardcorp/imagecashletter)
 
 ## Benchmarks and Profiling 
 
@@ -98,7 +98,7 @@ Profiling
 
 ```
 
-Use fPath to define the file to be read ( e.g. -fPath=github.com/moov-io/imagecashletter/cmd/readImageCashLetter/_filename_ )
+Use fPath to define the file to be read ( e.g. -fPath=github.com/cardcorp/imagecashletter/cmd/readImageCashLetter/_filename_ )
 
 Benchmark 
 

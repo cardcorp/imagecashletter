@@ -7,7 +7,7 @@ package fuzzreader
 import (
 	"bytes"
 
-	"github.com/moov-io/imagecashletter"
+	"github.com/cardcorp/imagecashletter"
 )
 
 // Return codes (from go-fuzz docs)

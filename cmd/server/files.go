@@ -13,9 +13,9 @@ import (
 	"net/http"
 	"strings"
 
+	"github.com/cardcorp/imagecashletter"
 	"github.com/moov-io/base"
 	moovhttp "github.com/moov-io/base/http"
-	"github.com/moov-io/imagecashletter"
 
 	"github.com/gorilla/mux"
 	"github.com/moov-io/base/log"

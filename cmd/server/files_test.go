@@ -18,8 +18,8 @@ import (
 
 	"github.com/stretchr/testify/require"
 
+	"github.com/cardcorp/imagecashletter"
 	"github.com/moov-io/base"
-	"github.com/moov-io/imagecashletter"
 
 	"github.com/gorilla/mux"
 	"github.com/moov-io/base/log"

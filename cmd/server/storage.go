@@ -8,7 +8,7 @@ import (
 	"errors"
 	"sync"
 
-	"github.com/moov-io/imagecashletter"
+	"github.com/cardcorp/imagecashletter"
 )
 
 type ICLFileRepository interface {

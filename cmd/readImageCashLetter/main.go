@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"flag"
 	"fmt"
-	"github.com/moov-io/imagecashletter"
+	"github.com/cardcorp/imagecashletter"
 	"log"
 	"os"
 	"runtime/pprof"

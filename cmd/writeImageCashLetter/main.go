@@ -11,7 +11,7 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/moov-io/imagecashletter"
+	"github.com/cardcorp/imagecashletter"
 )
 
 var (

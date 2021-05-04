@@ -9,7 +9,7 @@ import (
 	"os"
 	"time"
 
-	"github.com/moov-io/imagecashletter"
+	"github.com/cardcorp/imagecashletter"
 )
 
 func main() {

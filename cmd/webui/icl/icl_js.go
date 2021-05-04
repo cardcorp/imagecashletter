@@ -11,7 +11,7 @@ import (
 	"strings"
 	"syscall/js"
 
-	"github.com/moov-io/imagecashletter"
+	"github.com/cardcorp/imagecashletter"
 )
 
 func parseContents(input string) (string, error) {

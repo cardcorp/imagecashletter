@@ -7,8 +7,8 @@ package main
 import (
 	"testing"
 
+	"github.com/cardcorp/imagecashletter"
 	"github.com/moov-io/base"
-	"github.com/moov-io/imagecashletter"
 )
 
 type testICLFileRepository struct {

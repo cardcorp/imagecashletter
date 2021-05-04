@@ -1,7 +1,7 @@
 - name: API
   link: https://moov-io.github.io/imagecashletter/api
 - name: Go
-  link: https://pkg.go.dev/github.com/moov-io/imagecashletter#section-documentation
+  link: https://pkg.go.dev/github.com/cardcorp/imagecashletter#section-documentation
 - name: Demo
   link: https://oss.moov.io/x9/
 - name: Community
