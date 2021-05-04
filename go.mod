@@ -1,4 +1,4 @@
-module github.com/moov-io/imagecashletter
+module github.com/cardcorp/imagecashletter
 
 go 1.16
 
